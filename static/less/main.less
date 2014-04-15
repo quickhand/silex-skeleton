@@ -1,0 +1,65 @@
+@import "../../bower_components/bootstrap/less/bootstrap.less";
+@import "./_variables.less";
+
+.right-aside-big, .left-aside-big {
+    width:100%;
+    padding: 0;
+    position:relative;
+    margin: 0 0 (@line-height-computed / 2);
+}
+
+.right-aside-small, .left-aside-small {
+    width:100%;
+    padding: 0;
+    position:relative;
+    margin: 0 0 (@line-height-computed / 2);
+}
+
+
+.full-width {
+    width:100%;
+}
+
+//Here start customization and I can use my variables defined in @variables.less
+@media (min-width: @screen-md) {
+    .right-aside-big {
+        float:right!important;
+        margin-right: -50%;
+        margin-left: floor(@grid-gutter-width / 2);
+        left: floor(@grid-gutter-width / 2);
+    }
+    .left-aside-big {
+        float:left!important;
+        margin-left: -50%;
+        margin-right: floor(@grid-gutter-width / 2);
+        right: floor(@grid-gutter-width / 2);
+    }
+
+    .right-aside-small, .left-aside-small {
+        width: 100%*((@container-md - 3 * @grid-gutter-width) / (2 * @container-md - 3 * @grid-gutter-width));
+    }
+
+    .right-aside-small {
+     
+        float:right!important;
+        margin-right: -50%;
+        margin-left: floor(@grid-gutter-width / 2);
+        left: floor(@grid-gutter-width / 2);
+    }
+
+    .left-aside-small {
+        
+        float:left!important;
+        margin-left: -50%;
+        margin-right: floor(@grid-gutter-width / 2);
+        right: floor(@grid-gutter-width / 2);
+    }
+}
+
+@media (min-width: @screen-lg) {
+    .right-aside-small, .left-aside-small {
+        width: 100%*((@container-lg - 3 * @grid-gutter-width) / (2 * @container-lg - 3 * @grid-gutter-width));
+    }
+}
+
+

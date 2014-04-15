@@ -1,0 +1,19 @@
+{
+  "name": "MyApp",
+  "version": "0.0.0",
+  "authors": [
+    "Marc Lajoie <manorapide@gmail.com>"
+  ],
+  "license": "MIT",
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "vendor",
+    "test",
+    "tests"
+  ],
+  "dependencies": {
+    "bootstrap": "~3.0.3"
+  }
+}
